@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kutuphaneotomasyonu", "kutuphaneotomasyonu\kutuphaneotomasyonu.csproj", "{9743B000-A266-4E34-9770-BF53F8F15EC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9743B000-A266-4E34-9770-BF53F8F15EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9743B000-A266-4E34-9770-BF53F8F15EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9743B000-A266-4E34-9770-BF53F8F15EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9743B000-A266-4E34-9770-BF53F8F15EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B9C1EA9-43A5-4F26-8BC6-D0CECA6D788F}
+	EndGlobalSection
+EndGlobal

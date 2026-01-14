@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -67,6 +67,19 @@
             this.panel1.Size = new System.Drawing.Size(169, 514);
             this.panel1.TabIndex = 0;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Beige;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.Location = new System.Drawing.Point(0, 195);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(169, 65);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "ÜYE YÖNETİMİ";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Beige;
@@ -93,19 +106,6 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "ÖDÜNÇ İŞLEMLERİ";
             this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Beige;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(0, 195);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(169, 65);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "ÜYE YÖNETİMİ";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -188,48 +188,48 @@
             // 
             this.txtISBN.Location = new System.Drawing.Point(279, 75);
             this.txtISBN.Name = "txtISBN";
-            this.txtISBN.Size = new System.Drawing.Size(368, 22);
+            this.txtISBN.Size = new System.Drawing.Size(534, 22);
             this.txtISBN.TabIndex = 8;
             // 
             // txtAd
             // 
             this.txtAd.Location = new System.Drawing.Point(279, 107);
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(368, 22);
+            this.txtAd.Size = new System.Drawing.Size(534, 22);
             this.txtAd.TabIndex = 9;
             // 
             // txtYazar
             // 
             this.txtYazar.Location = new System.Drawing.Point(279, 147);
             this.txtYazar.Name = "txtYazar";
-            this.txtYazar.Size = new System.Drawing.Size(368, 22);
+            this.txtYazar.Size = new System.Drawing.Size(534, 22);
             this.txtYazar.TabIndex = 10;
             // 
             // txtYayinevi
             // 
             this.txtYayinevi.Location = new System.Drawing.Point(279, 189);
             this.txtYayinevi.Name = "txtYayinevi";
-            this.txtYayinevi.Size = new System.Drawing.Size(368, 22);
+            this.txtYayinevi.Size = new System.Drawing.Size(534, 22);
             this.txtYayinevi.TabIndex = 11;
             // 
             // txtBasim
             // 
             this.txtBasim.Location = new System.Drawing.Point(279, 234);
             this.txtBasim.Name = "txtBasim";
-            this.txtBasim.Size = new System.Drawing.Size(368, 22);
+            this.txtBasim.Size = new System.Drawing.Size(534, 22);
             this.txtBasim.TabIndex = 12;
             // 
             // txtStok
             // 
             this.txtStok.Location = new System.Drawing.Point(279, 272);
             this.txtStok.Name = "txtStok";
-            this.txtStok.Size = new System.Drawing.Size(368, 22);
+            this.txtStok.Size = new System.Drawing.Size(534, 22);
             this.txtStok.TabIndex = 13;
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Thistle;
-            this.button5.Location = new System.Drawing.Point(690, 65);
+            this.button5.Location = new System.Drawing.Point(838, 86);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(132, 72);
             this.button5.TabIndex = 14;
@@ -240,7 +240,7 @@
             // btnGuncelle
             // 
             this.btnGuncelle.BackColor = System.Drawing.Color.Thistle;
-            this.btnGuncelle.Location = new System.Drawing.Point(690, 144);
+            this.btnGuncelle.Location = new System.Drawing.Point(838, 164);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(132, 72);
             this.btnGuncelle.TabIndex = 15;
@@ -251,7 +251,7 @@
             // btnSil
             // 
             this.btnSil.BackColor = System.Drawing.Color.Thistle;
-            this.btnSil.Location = new System.Drawing.Point(690, 222);
+            this.btnSil.Location = new System.Drawing.Point(838, 234);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(132, 72);
             this.btnSil.TabIndex = 16;
@@ -266,7 +266,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(606, 177);
+            this.dataGridView1.Size = new System.Drawing.Size(771, 177);
             this.dataGridView1.TabIndex = 17;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -275,7 +275,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1131, 514);
+            this.ClientSize = new System.Drawing.Size(1088, 514);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnGuncelle);
@@ -295,6 +295,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "BookForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BookForm";
             this.Load += new System.EventHandler(this.BookForm_Load);
             this.panel1.ResumeLayout(false);

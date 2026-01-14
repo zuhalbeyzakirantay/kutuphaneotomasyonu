@@ -27,5 +27,12 @@ namespace kutuphaneotomasyonu.Service
         {
             return reportDAL.GetMostReadBooks();
         }
+
+        public DataTable GetActiveMembers()
+        {
+            return reportDAL.GetActiveMembers();
+        }
     }
+
+
 }

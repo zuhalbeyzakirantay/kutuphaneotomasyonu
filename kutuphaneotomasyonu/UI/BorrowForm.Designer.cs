@@ -59,7 +59,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(169, 450);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(169, 514);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // button1
@@ -126,7 +126,7 @@
             this.cmbMembers.FormattingEnabled = true;
             this.cmbMembers.Location = new System.Drawing.Point(327, 49);
             this.cmbMembers.Name = "cmbMembers";
-            this.cmbMembers.Size = new System.Drawing.Size(200, 24);
+            this.cmbMembers.Size = new System.Drawing.Size(435, 24);
             this.cmbMembers.TabIndex = 2;
             // 
             // cmbBooks
@@ -134,7 +134,7 @@
             this.cmbBooks.FormattingEnabled = true;
             this.cmbBooks.Location = new System.Drawing.Point(327, 97);
             this.cmbBooks.Name = "cmbBooks";
-            this.cmbBooks.Size = new System.Drawing.Size(200, 24);
+            this.cmbBooks.Size = new System.Drawing.Size(435, 24);
             this.cmbBooks.TabIndex = 3;
             // 
             // label2
@@ -159,14 +159,14 @@
             // 
             this.dtBorrowDate.Location = new System.Drawing.Point(327, 145);
             this.dtBorrowDate.Name = "dtBorrowDate";
-            this.dtBorrowDate.Size = new System.Drawing.Size(200, 22);
+            this.dtBorrowDate.Size = new System.Drawing.Size(435, 22);
             this.dtBorrowDate.TabIndex = 6;
             // 
             // dtReturnDate
             // 
             this.dtReturnDate.Location = new System.Drawing.Point(329, 188);
             this.dtReturnDate.Name = "dtReturnDate";
-            this.dtReturnDate.Size = new System.Drawing.Size(200, 22);
+            this.dtReturnDate.Size = new System.Drawing.Size(433, 22);
             this.dtReturnDate.TabIndex = 7;
             // 
             // label4
@@ -181,7 +181,7 @@
             // btnBorrow
             // 
             this.btnBorrow.BackColor = System.Drawing.Color.Thistle;
-            this.btnBorrow.Location = new System.Drawing.Point(623, 49);
+            this.btnBorrow.Location = new System.Drawing.Point(806, 49);
             this.btnBorrow.Name = "btnBorrow";
             this.btnBorrow.Size = new System.Drawing.Size(136, 72);
             this.btnBorrow.TabIndex = 9;
@@ -192,7 +192,7 @@
             // btnReturn
             // 
             this.btnReturn.BackColor = System.Drawing.Color.Thistle;
-            this.btnReturn.Location = new System.Drawing.Point(623, 138);
+            this.btnReturn.Location = new System.Drawing.Point(806, 132);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(136, 72);
             this.btnReturn.TabIndex = 10;
@@ -207,7 +207,7 @@
             this.dataGridViewBorrow.Name = "dataGridViewBorrow";
             this.dataGridViewBorrow.RowHeadersWidth = 51;
             this.dataGridViewBorrow.RowTemplate.Height = 24;
-            this.dataGridViewBorrow.Size = new System.Drawing.Size(538, 196);
+            this.dataGridViewBorrow.Size = new System.Drawing.Size(721, 250);
             this.dataGridViewBorrow.TabIndex = 11;
             this.dataGridViewBorrow.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBorrow_CellClick);
             // 
@@ -226,7 +226,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1088, 514);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dataGridViewBorrow);
             this.Controls.Add(this.btnReturn);
@@ -241,6 +241,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "BorrowForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BorrowForm";
             this.Load += new System.EventHandler(this.BorrowForm_Load);
             this.flowLayoutPanel1.ResumeLayout(false);

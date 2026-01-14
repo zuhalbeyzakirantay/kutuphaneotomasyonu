@@ -53,7 +53,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(169, 450);
+            this.panel1.Size = new System.Drawing.Size(169, 514);
             this.panel1.TabIndex = 0;
             // 
             // button4
@@ -118,13 +118,13 @@
             this.cmbReportType.FormattingEnabled = true;
             this.cmbReportType.Location = new System.Drawing.Point(336, 72);
             this.cmbReportType.Name = "cmbReportType";
-            this.cmbReportType.Size = new System.Drawing.Size(253, 24);
+            this.cmbReportType.Size = new System.Drawing.Size(320, 24);
             this.cmbReportType.TabIndex = 2;
             // 
             // btnReport
             // 
             this.btnReport.BackColor = System.Drawing.Color.Thistle;
-            this.btnReport.Location = new System.Drawing.Point(643, 65);
+            this.btnReport.Location = new System.Drawing.Point(675, 65);
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(145, 81);
             this.btnReport.TabIndex = 7;
@@ -149,7 +149,7 @@
             this.dataGridViewReport.Name = "dataGridViewReport";
             this.dataGridViewReport.RowHeadersWidth = 51;
             this.dataGridViewReport.RowTemplate.Height = 24;
-            this.dataGridViewReport.Size = new System.Drawing.Size(504, 227);
+            this.dataGridViewReport.Size = new System.Drawing.Size(614, 244);
             this.dataGridViewReport.TabIndex = 9;
             // 
             // label5
@@ -166,7 +166,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1088, 514);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dataGridViewReport);
             this.Controls.Add(this.label4);
@@ -175,6 +175,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "ReportForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReportForm";
             this.Load += new System.EventHandler(this.ReportForm_Load);
             this.panel1.ResumeLayout(false);

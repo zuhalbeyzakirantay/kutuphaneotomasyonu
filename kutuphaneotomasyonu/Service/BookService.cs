@@ -9,7 +9,7 @@ namespace kutuphaneotomasyonu.Service
     {
         BookDAL bookDAL = new BookDAL();
 
-        // 1️⃣ KİTAP EKLEME (İŞ KURALLARI VAR)
+        
         public void AddBook(Book book)
         {
             if (string.IsNullOrWhiteSpace(book.Name))

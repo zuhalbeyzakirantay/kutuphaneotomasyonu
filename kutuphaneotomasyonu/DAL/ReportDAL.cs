@@ -75,5 +75,31 @@ namespace kutuphaneotomasyonu.DAL
             }
             return dt;
         }
+        public DataTable GetActiveMembers()
+        {
+            DataTable dt = new DataTable();
+
+            using (MySqlConnection conn = db.GetConnection())
+            {
+                conn.Open();
+
+                string query = @"
+                SELECT 
+                    m.Name,
+                    m.Surname,
+                    COUNT(b.BorrowId) AS BorrowCount
+                FROM borrows b
+                INNER JOIN members m ON b.MemberId = m.MemberId
+                GROUP BY m.MemberId, m.Name, m.Surname
+                ";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, conn);
+                da.Fill(dt);
+            }
+
+            return dt;
+        }
+
+
     }
 }

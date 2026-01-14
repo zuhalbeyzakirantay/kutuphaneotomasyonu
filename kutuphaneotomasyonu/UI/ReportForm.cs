@@ -24,6 +24,8 @@ namespace kutuphaneotomasyonu.UI
             cmbReportType.Items.Add("Tüm Ödünçler");
             cmbReportType.Items.Add("İade Edilmemiş Kitaplar");
             cmbReportType.Items.Add("En Çok Okunan Kitaplar");
+            cmbReportType.Items.Add("Aktif Üyeler");
+
 
             cmbReportType.SelectedIndex = 0;
         }
@@ -38,6 +40,8 @@ namespace kutuphaneotomasyonu.UI
                 dataGridViewReport.DataSource = reportService.GetNotReturnedBorrows();
             else if (selectedReport == "En Çok Okunan Kitaplar")
                 dataGridViewReport.DataSource = reportService.GetMostReadBooks();
+            else if(selectedReport == "Aktif Üyeler")
+                dataGridViewReport.DataSource = reportService.GetActiveMembers();
         }
     }
 }

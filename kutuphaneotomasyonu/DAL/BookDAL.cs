@@ -8,7 +8,7 @@ namespace kutuphaneotomasyonu.DAL
     {
         DbConnection db = new DbConnection();
 
-        // 1️⃣ KİTAP EKLEME
+        
         public void Add(Book book)
         {
             using (MySqlConnection conn = db.GetConnection())

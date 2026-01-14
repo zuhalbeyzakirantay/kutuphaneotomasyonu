@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnUyeYonetimi = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.btnUyeYonetimi = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -59,8 +59,21 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(169, 450);
+            this.panel1.Size = new System.Drawing.Size(169, 514);
             this.panel1.TabIndex = 0;
+            // 
+            // btnUyeYonetimi
+            // 
+            this.btnUyeYonetimi.BackColor = System.Drawing.Color.DarkKhaki;
+            this.btnUyeYonetimi.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUyeYonetimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUyeYonetimi.Location = new System.Drawing.Point(0, 195);
+            this.btnUyeYonetimi.Name = "btnUyeYonetimi";
+            this.btnUyeYonetimi.Size = new System.Drawing.Size(169, 65);
+            this.btnUyeYonetimi.TabIndex = 1;
+            this.btnUyeYonetimi.Text = "ÜYE YÖNETİMİ";
+            this.btnUyeYonetimi.UseVisualStyleBackColor = false;
+            this.btnUyeYonetimi.Click += new System.EventHandler(this.btnUyeYonetimi_Click);
             // 
             // button4
             // 
@@ -86,19 +99,6 @@
             this.button3.Text = "ÖDÜNÇ İŞLEMLERİ";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btnUyeYonetimi
-            // 
-            this.btnUyeYonetimi.BackColor = System.Drawing.Color.DarkKhaki;
-            this.btnUyeYonetimi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUyeYonetimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnUyeYonetimi.Location = new System.Drawing.Point(0, 195);
-            this.btnUyeYonetimi.Name = "btnUyeYonetimi";
-            this.btnUyeYonetimi.Size = new System.Drawing.Size(169, 65);
-            this.btnUyeYonetimi.TabIndex = 1;
-            this.btnUyeYonetimi.Text = "ÜYE YÖNETİMİ";
-            this.btnUyeYonetimi.UseVisualStyleBackColor = false;
-            this.btnUyeYonetimi.Click += new System.EventHandler(this.btnUyeYonetimi_Click);
             // 
             // button1
             // 
@@ -162,7 +162,7 @@
             // 
             this.txtAd.Location = new System.Drawing.Point(297, 65);
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(304, 22);
+            this.txtAd.Size = new System.Drawing.Size(449, 22);
             this.txtAd.TabIndex = 6;
             this.txtAd.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -170,27 +170,27 @@
             // 
             this.txtSoyad.Location = new System.Drawing.Point(297, 108);
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(304, 22);
+            this.txtSoyad.Size = new System.Drawing.Size(449, 22);
             this.txtSoyad.TabIndex = 7;
             // 
             // txtTelefon
             // 
             this.txtTelefon.Location = new System.Drawing.Point(297, 148);
             this.txtTelefon.Name = "txtTelefon";
-            this.txtTelefon.Size = new System.Drawing.Size(304, 22);
+            this.txtTelefon.Size = new System.Drawing.Size(449, 22);
             this.txtTelefon.TabIndex = 8;
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(295, 189);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(306, 22);
+            this.txtEmail.Size = new System.Drawing.Size(451, 22);
             this.txtEmail.TabIndex = 9;
             // 
             // btnEkle
             // 
             this.btnEkle.BackColor = System.Drawing.Color.Thistle;
-            this.btnEkle.Location = new System.Drawing.Point(633, 65);
+            this.btnEkle.Location = new System.Drawing.Point(780, 65);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(136, 72);
             this.btnEkle.TabIndex = 10;
@@ -201,7 +201,7 @@
             // btnSil
             // 
             this.btnSil.BackColor = System.Drawing.Color.Thistle;
-            this.btnSil.Location = new System.Drawing.Point(633, 154);
+            this.btnSil.Location = new System.Drawing.Point(780, 154);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(136, 72);
             this.btnSil.TabIndex = 11;
@@ -216,7 +216,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(546, 190);
+            this.dataGridView1.Size = new System.Drawing.Size(702, 230);
             this.dataGridView1.TabIndex = 12;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -225,7 +225,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1088, 514);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnEkle);
@@ -240,6 +240,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "MemberForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MemberForm";
             this.Load += new System.EventHandler(this.MemberForm_Load);
             this.panel1.ResumeLayout(false);
